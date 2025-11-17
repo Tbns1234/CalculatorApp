@@ -12,11 +12,19 @@ public class Calculator {
 		return a*b;
 	}
 
+	public static int division(int a,int b) {
+		if(a>b) {
+			return a/b;
+		}
+		else
+			return b/a;
+	}
 
     public static void main(String[] args) {
         System.out.println("Addition: " + add(10, 5));
         System.out.println("Subtraction: " + subtract(10, 5));
         System.out.println("Multiplication is :"+ multiplication(10,20));
+        System.out.println("Quotent is :"+division(20,10));
 
     }
 }
